@@ -1,0 +1,6 @@
+---
+Name: silverstripe-google-analytics
+---
+SilverStripe\CMS\Controllers\ContentController:
+  extensions:
+    - Syntro\SilverstripeGoogleAnalytics\Extension\ContentControllerExtension
