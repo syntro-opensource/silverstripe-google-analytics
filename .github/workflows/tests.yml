@@ -69,11 +69,6 @@ jobs:
           apt update && apt-get install git -yqq
       - name: Checkout code
         uses: actions/checkout@v2
-      - name: setup ssh agent
-        uses: webfactory/ssh-agent@v0.5.4
-        with:
-          ssh-private-key: |
-            ${{ secrets.DEPLOYKEY_ELEMENTAL_BOOTSTRAP_BLOCKS }}
       - name: install dependencies
         run: |
           composer require --no-update silverstripe/recipe-cms:$RECIPE_CMS_VERSION &&\
@@ -105,11 +100,6 @@ jobs:
           apt update && apt-get install git -yqq
       - name: Checkout code
         uses: actions/checkout@v2
-      - name: setup ssh agent
-        uses: webfactory/ssh-agent@v0.5.4
-        with:
-          ssh-private-key: |
-            ${{ secrets.DEPLOYKEY_ELEMENTAL_BOOTSTRAP_BLOCKS }}
       - name: install dependencies
         run: |
           composer require --no-update silverstripe/recipe-cms:$RECIPE_CMS_VERSION &&\
