@@ -27,7 +27,7 @@
     "autoload": {
         "psr-4": {
             "Syntro\\SilverstripeGoogleAnalytics\\": "src/",
-            "Syntro\\SilverstripeGoogleAnalytics\\Tests\\": "tests/"
+            "Syntro\\SilverstripeGoogleAnalytics\\Tests\\": "tests/php/"
         }
     },
     "scripts": {
