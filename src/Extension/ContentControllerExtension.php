@@ -26,6 +26,7 @@ class ContentControllerExtension extends Extension
         /** @var null|string $google_token */
         $google_token = SSConfig::inst()->get(Config::class, 'google_token');
         if (!is_null($google_token)) {
+            Config::includeKlaroRequirements();
             if (Director::isLive() && Versioned::get_stage() == Versioned::LIVE) {
                 Config::requireAnalytics();
             }

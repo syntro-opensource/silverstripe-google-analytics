@@ -1,5 +1,7 @@
 ---
 Name: silverstripe-google-analytics
+Before:
+  - 'syntro/silverstripe-klaro'
 ---
 SilverStripe\CMS\Controllers\ContentController:
   extensions:

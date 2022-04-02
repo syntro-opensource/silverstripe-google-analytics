@@ -81,7 +81,6 @@ jobs:
       - name: submit coverage
         uses: codecov/codecov-action@v2
         with:
-          token: ${{ secrets.CODECOV_TOKEN }}
           files: ./coverage.xml
         if: ${{ matrix.php == '7.4' }}
   phpstan:
