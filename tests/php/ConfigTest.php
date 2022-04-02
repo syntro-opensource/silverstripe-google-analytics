@@ -140,8 +140,5 @@ class ConfigTest extends FunctionalTest
         });
 
         $this->assertArrayHasKey("https://www.googletagmanager.com/gtag/js?id=$google_token", $backend->getKlaroJavascript());
-
-
     }
-
 }
